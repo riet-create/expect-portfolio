@@ -1,104 +1,33 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Expect — UX/UI дизайнер</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    .sticker {
-      position: absolute;
-      z-index: 1;
-      opacity: 0.8;
-      animation: float 6s ease-in-out infinite;
-    }
-
-    @keyframes float {
-      0% {
-        transform: translateY(0);
-      }
-
-      50% {
-        transform: translateY(-15px);
-      }
-
-      100% {
-        transform: translateY(0);
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Expect Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body>
+  <div class="background-overlay"></div>
+  <div class="container">
+    <header class="fade-in">
+      <h1>👨‍💻 Expect</h1>
+      <p class="subtitle">DevOps-инженер</p>
+    </header>
 
-<body class="bg-gray-100 text-gray-900 font-sans scroll-smooth">
+    <section class="about fade-in">
+      <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="DevOps Icon" class="icon" />
+      <p>Привет! Я DevOps-инженер, увлечённый автоматизацией, стабильностью и безопасностью. Создаю продуманные инфраструктуры, CI/CD пайплайны и современную DevOps-культуру.</p>
+    </section>
 
-  <!-- Hero Section -->
-  <section class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white relative">
-    <h1 class="text-6xl font-bold mb-4">Expect</h1>
-    <p class="text-2xl mb-6">UX/UI дизайнер с креативным подходом</p>
-    <div class="space-x-4">
-      <a href="#about" class="bg-white text-indigo-600 px-6 py-3 rounded-full hover:bg-indigo-100 transition">Обо мне</a>
-      <a href="#portfolio" class="bg-white text-indigo-600 px-6 py-3 rounded-full hover:bg-indigo-100 transition">Портфолио</a>
-      <a href="#contact" class="bg-white text-indigo-600 px-6 py-3 rounded-full hover:bg-indigo-100 transition">Контакты</a>
-    </div>
-    <!-- Sticker Animations -->
-    <img src="https://i.pinimg.com/originals/43/35/43/433543232f455e7ad34e37ffbfa3fd1d.png" alt="Sticker 1" class="sticker top-10 left-20 w-20">
-    <img src="https://i.pinimg.com/originals/a9/c4/c8/a9c4c83eb0ac09772ff41d3c79e04e10.png" alt="Sticker 2" class="sticker bottom-20 right-20 w-20">
-    <img src="https://i.pinimg.com/originals/74/27/9e/74279e01a27d233a459317d84de5b618.png" alt="Sticker 3" class="sticker top-20 right-10 w-16">
-  </section>
+    <section class="contact fade-in">
+      <h2>📬 Связаться</h2>
+      <p>Telegram: <a href="https://t.me/stuexp" target="_blank">@stuexp</a></p>
+    </section>
 
-  <!-- About Section -->
-  <section id="about" class="py-16 px-8 max-w-4xl mx-auto text-center">
-    <h2 class="text-4xl font-bold mb-6 text-indigo-600">Обо мне</h2>
-    <p class="text-lg mb-4">Привет! Я Expect, опытный UX/UI дизайнер из Кыргызстана с более чем 3-летним стажем. Моя работа — это создание интерфейсов, которые вдохновляют и делают повседневные задачи проще.</p>
-    <p class="text-lg">Я специализируюсь на разработке красивых и функциональных решений, которые идеально подходят для ваших пользователей. В каждой моей работе я стремлюсь к совершенству и точности.</p>
-  </section>
-
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="py-16 px-8 bg-gray-200">
-    <h2 class="text-4xl font-bold text-center mb-8 text-indigo-600">Портфолио</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img src="https://via.placeholder.com/400x250" alt="Проект 1" class="w-full h-48 object-cover mb-4">
-        <div class="p-4">
-          <h3 class="font-semibold text-xl mb-2">Мобильное приложение</h3>
-          <p>Разработка пользовательского интерфейса для мобильного приложения. Включает в себя создание уникальных и удобных экранов.</p>
-        </div>
-      </div>
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img src="https://via.placeholder.com/400x250" alt="Проект 2" class="w-full h-48 object-cover mb-4">
-        <div class="p-4">
-          <h3 class="font-semibold text-xl mb-2">Лендинг</h3>
-          <p>Дизайн лендинга для стартапа, с фокусом на высокую конверсию и стильный, современный интерфейс.</p>
-        </div>
-      </div>
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img src="https://via.placeholder.com/400x250" alt="Проект 3" class="w-full h-48 object-cover mb-4">
-        <div class="p-4">
-          <h3 class="font-semibold text-xl mb-2">Интернет-магазин</h3>
-          <p>Создание интерфейса для интернет-магазина, с простым и удобным процессом покупки для пользователей.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-16 px-8 text-center">
-    <h2 class="text-4xl font-bold mb-6 text-indigo-600">Контакты</h2>
-    <p class="text-lg mb-4">Связаться со мной легко! Напишите в Telegram, и я с удовольствием отвечу на все вопросы.</p>
-    <a href="https://t.me/stuexp" class="text-indigo-600 underline text-xl">Написать в Telegram</a>
-    <div class="mt-6 space-x-4">
-      <a href="#" class="text-gray-600 hover:text-indigo-600">Instagram</a>
-      <a href="#" class="text-gray-600 hover:text-indigo-600">Behance</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="py-6 text-center text-sm text-gray-500">
-    © 2025 Expect. Все права защищены.
-  </footer>
-
+    <footer class="fade-in">
+      <p>© 2025 Expect — Сделано с душой 🤍</p>
+    </footer>
+  </div>
 </body>
-
 </html>
 
